@@ -45,7 +45,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -screenshot(s) van hoe ver je bent-
 
 ### Agenda voor meeting
-
+    
 -samen met je groepje opstellen-
 
 ### Verslag van meeting
@@ -56,16 +56,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** Twijfel tussen Blauw en Rood
+**Je startniveau:** Blauw
 
-**Je focus:** 1b - Dan keuze voor helemaal responsive óf extra aandacht voor de surface laag
+**Je focus:** 1B 
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** www.blender.org
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/Blender1.jpg)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/Blender2.jpg)
