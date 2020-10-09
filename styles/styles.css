@@ -41,6 +41,7 @@ nav{
     justify-content: space-between;
     
     align-items: center;
+    
     width:100%;
     height:53px;
 }
@@ -49,7 +50,10 @@ label.logo{
     
     padding: 1em;
     width: 10em;
-    background-image: image("images/logo.svg")
+    background-image: image("images/logo.svg");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size:cover;
 }
 
 
@@ -64,23 +68,23 @@ a:hover{
     text-decoration: underline;
 }
 
-ul{
+header ul{
     margin:0;
     padding: 0;
     display:flex;
 }
 
-li{
+header li{
     list-style: none;
 }
 
-li a:hover{
+header li a:hover{
     color: #5ecdfc;
-      text-decoration: underline;
+    text-decoration: underline;
 }
 
 
-li a{
+header li a{
     text-decoration: none;
     color: #4d4e53;
     padding: 1em;
@@ -88,11 +92,13 @@ li a{
 }
 
 /* Sections */
+
 main section{
    
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em,1fr));
-  grid-gap: 2em;
+    /*display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(23em,1fr));
+    grid-gap: 2em; */
+    
     /*position:relative;
     display:flex;
     justify-content: space-between;
@@ -101,7 +107,13 @@ main section{
 }
 
 
-
+div{
+  display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(23em,1fr));
+    grid-gap: 2em;  
+  
+    
+}
 
 section button{
     
@@ -119,8 +131,9 @@ section button{
 }
 
 section h2{
-   
-    position: relative;
+ 
+   display: inline;
+    
     
     width: 100%;
 }
@@ -130,6 +143,24 @@ section h3{
   
     
 }
+
+div > section p,h2,h3,ul,li {
+    
+    color:white;
+}
+
+
+section h3 a{
+    text-decoration: none;
+    color:#4d4e53;
+}
+
+section h3 a:hover{
+    text-decoration: underline;
+}
+
+
+/* article */
 
 article > a{
     color: #079edc;
@@ -143,36 +174,45 @@ article > a:hover{
     
 }
 
-section h3 a{
-    text-decoration: none;
-    color:#4d4e53;
-}
-
-section h3 a:hover{
-    text-decoration: underline;
-}
-
-
 article{
-    
+    max-width: 1440px;
+    margin: 0 auto;
     position:relative;
     background-color: white;
-    width: 25em;
-    padding: 2em;
+    
+    
     border-radius: 15px;
 }
    
 
+
+article p {
+    position:relative;
+    padding: 0.5em 2em 0.5em 2em;
+    
+}
+
+article > img {
+    
+    border-radius: 15px 15px 0 0;
+    
+}
+
+article h3{
+    font-size: 20px;
+}
+
 article a{
     
+    display: inline-block;
     text-decoration: underline;
-    display:flex;
     
+    padding: 0.5em 0 0.5em 1.5em;
 }
 
 main div{
     
-    position: relative;
+    
 }
 
 article > img{
@@ -183,11 +223,27 @@ article > img{
 }
 
 
+/* classes */
+
+
 div.container{
     
-     background-image: url('../images/foto1.jpg');
+    background-image: url('../images/foto1.jpg');
     width: 100%;
     height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center; 
+    
+}
+
+div.container2{
+      background-image: url('../images/bg-image.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center; 
     
 }
 
@@ -195,6 +251,8 @@ section.container{
     margin-top:5em;
     background: #f8f8f8;
     width: 100%;
+    max-width: 1440px;
+    margin:auto 0;
 }
 
 
@@ -203,6 +261,17 @@ section.container2{
     
     background:#EFEFEF;
     width: 100%;
+}
+
+
+.container3{
+    max-width: 1440px;
+    margin: auto 0;
+}
+
+section > li {
+    
+    list-style: circle;
 }
 
 
@@ -217,7 +286,7 @@ section.container2{
     justify-content: space-between;
     width: 30px;
     height: 21px;
-        
+ 
 }
 
 .toggle-button .bar{
@@ -245,6 +314,7 @@ section.container2{
 .gradiant{
     
      background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+    
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -254,15 +324,15 @@ section.container2{
         display: flex;
     }
     
-    li{
+    header li{
          display:none; */ 
     }
     
-    nav{
+    header nav{
         flex-direction: column;
         align-items: flex-start;
     }
-    ul{
+    header ul{
         flex-direction: column;
         width: 100%;
         padding-left: 1em;
@@ -272,5 +342,6 @@ section.container2{
 li.active{
     display:flex;
 }
+
 
 
