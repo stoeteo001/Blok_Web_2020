@@ -103,6 +103,8 @@ main section{
     display:flex;
     justify-content: space-between;
     align-content: center; */
+    
+    padding: 2em;
      
 }
 
@@ -138,9 +140,24 @@ section h2{
     width: 100%;
 }
 
-section h3{
- 
-  
+
+section > h2{
+    display: flex; 
+    font-size:36px;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+
+section > h3{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size:20px;
+    
+}
+
+section > ul{
+    padding-bottom: 4em;
     
 }
 
@@ -157,6 +174,12 @@ section h3 a{
 
 section h3 a:hover{
     text-decoration: underline;
+}
+
+section > p{
+    
+    padding-bottom: 1em;
+    
 }
 
 
@@ -204,8 +227,8 @@ article h3{
 
 article a{
     
-    display: inline-block;
-    text-decoration: underline;
+    display: flex;
+    text-decoration: none;
     
     padding: 0.5em 0 0.5em 1.5em;
 }
@@ -215,6 +238,8 @@ main div{
     
 }
 
+
+
 article > img{
     
    
@@ -222,13 +247,38 @@ article > img{
     
 }
 
+secion > image{
+    transition: transform .2s;
+    width: 80%;  
+    height: 1px;
+}
+
+section > image:hover{
+      -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+   transform: scale(1.5); 
+     
+}
+
+
 
 /* classes */
 
 
-div.container{
+div.mainImage{
     
-    background-image: url('../images/foto1.jpg');
+    background-image: url('../images/main_image.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center; 
+    
+}
+
+div.jobImage{
+    
+    background-image: url('../images/main_image_2.jpg');
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -240,10 +290,22 @@ div.container{
 div.container2{
       background-image: url('../images/bg-image.jpg');
     width: 100%;
-    height: 600px;
+    height: 4000px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center; 
+    
+}
+
+.justifyLink{
+    
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.articleContainer{
+    
     
 }
 
@@ -251,7 +313,7 @@ section.container{
     margin-top:5em;
     background: #f8f8f8;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     margin:auto 0;
 }
 
@@ -275,7 +337,39 @@ section > li {
 }
 
 
- #4d4e53
+/* footer */
+
+footer{
+    display:grid;
+    padding: 53px;
+    background-color: #DFDFDF;
+    height: 850px;
+    
+}
+
+a > img {
+    
+    height: 2em;
+    width: 2em;
+}
+
+footer > div{
+    
+      display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em,1fr));
+    grid-gap: 2em;
+}
+
+footer ul
+{
+    list-style: none;
+}
+
+footer h3{
+    
+    color:#4d4e53;
+    font-size: 0.9em;
+}
 
 .toggle-button{
     position: absolute;
@@ -311,6 +405,13 @@ section > li {
  display:flex;
 }
 
+div.Grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 2(30em,1fr));
+    grid-gap: 2em;  
+    
+}
+
 .gradiant{
     
      background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
@@ -325,7 +426,7 @@ section > li {
     }
     
     header li{
-         display:none; */ 
+         display:none; 
     }
     
     header nav{
@@ -341,6 +442,18 @@ section > li {
 
 li.active{
     display:flex;
+}
+
+footer{
+    height: 450px; 
+}
+
+
+@media (max-width: 1920px){
+    
+    footer{
+        height:850px;
+    }
 }
 
 
