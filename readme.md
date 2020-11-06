@@ -8,13 +8,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. -ww3schools-
 2. -https://www.youtube.com/watch?v=gXkqy0b4M5g&t=1683s-
-
-
-
+3. -https://stackoverflow.com/questions/5080699/how-can-i-style-even-and-odd-elements-
+4. -https://stackoverflow.com/questions/60750065/css-grid-order-on-different-media-widths-
+5. -https://stackoverflow.com/questions/45367864/change-the-column-order-in-a-css-grid-
+6. -https://stackoverflow.com/questions/11223585/how-to-stretch-the-background-image-to-fill-a-div-
+7. -https://stackoverflow.com/questions/22630294/js-toggle-show-only-clicked-one-and-hide-all-others-
+8. -https://stackoverflow.com/questions/9897306/font-face-not-working-
+9. -https://stackoverflow.com/questions/18735188/queryselectorall-not-working-
+10. -https://www.sitepoint.com/order-align-items-grid-layout/-
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+verbeterpunten
+
+consistent met paddings
+micro interactie werkend krijgen
+grid laatste onderdeel werkend krijgen
+annotaties
+css slordig
 
 **Screenshot(s):**
 
