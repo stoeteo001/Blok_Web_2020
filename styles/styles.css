@@ -5,7 +5,21 @@
     box-sizing: border-box;
 }
 
-body {}
+/* laat de font vanuit desktop in*/
+@font-face {
+
+    font-family: 'segoeui';
+    src: url(../font/segoeui.ttf);
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+/* body - roept de font family aan */
+body {
+
+    font-family: segoeui;
+}
 
 /* Header */
 
@@ -28,10 +42,27 @@ img {
 
 }
 
+header button {
+
+
+    background-color: #079edc;
+    margin-top: 0.5em;
+    height: 3em;
+    width: 10em;
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+li button {
+
+    color: white;
+}
+
 nav {
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     align-items: center;
 
@@ -39,16 +70,21 @@ nav {
     height: 53px;
 }
 
-label.logo {
+.logo {
 
-    padding: 1em;
-    width: 10em;
-    background-image: image("images/logo.svg");
+    background-image: url('../images/logo.svg');
+    padding: 1.5em;
+    width: 9em;
+    margin-left: 5em;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+
 }
 
+button a {
+
+    color: white;
+}
 
 a {
 
@@ -57,12 +93,18 @@ a {
 
 }
 
+button a {
+    color: white;
+
+}
+
+
 a:hover {
     text-decoration: underline;
 }
 
 header ul {
-    margin: 0;
+    margin: 2em 7em 2em 0em;
     padding: 0;
     display: flex;
 }
@@ -82,6 +124,15 @@ header li a {
     color: #4d4e53;
     padding: 1em;
     display: block;
+    font-size: 0.9em;
+}
+
+/* grid */
+grid-container {
+    display: grid;
+    grid-template-columns: 15% 1fr 25%;
+    grid-auto-rows: 50px;
+    grid-gap: 10px;
 }
 
 /* Sections */
@@ -95,7 +146,7 @@ main section {
     display:flex;
     justify-content: space-between;
     align-content: center; */
-    padding: 2em;
+    padding: 2em 10em 2em 10em;
 
 }
 
@@ -104,25 +155,19 @@ button {
 
     display: flex;
     justify-content: center;
-
+    color: white
 }
 
 
 
-div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
-    grid-gap: 2em;
-
-
-}
+div {}
 
 section button {
 
     position: relative;
     background-color: #079edc;
-    margin: 0px 48px;
-    padding: 7px 48px;
+    margin: 0 2em;
+    padding: 1em 1.3em;
     outline: none;
     font-size: 18px;
     color: white;
@@ -132,9 +177,10 @@ section button {
 
 }
 
-button > a {
+a button {
 
-    color: white;
+    color: red;
+
 }
 
 section h2 {
@@ -173,12 +219,14 @@ ul,
 li {
 
     color: white;
+
 }
 
 
 section h3 a {
     text-decoration: none;
     color: #4d4e53;
+
 }
 
 section h3 a:hover {
@@ -188,11 +236,15 @@ section h3 a:hover {
 section > p {
 
     padding-bottom: 1em;
-
+    width: 100%;
 }
 
 
 /* article */
+p > div {
+    width: 20%;
+
+}
 
 article > a {
     color: #079edc;
@@ -211,7 +263,9 @@ article {
     position: relative;
     background-color: white;
     margin-top: 1em;
-
+    -webkit-box-shadow: 2px 3px 10px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 3px 10px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 3px 10px -6px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
 }
 
@@ -220,7 +274,7 @@ article {
 article p {
     position: relative;
     padding: 0.5em 2em 0.5em 2em;
-
+    font-family: segoeui;
 }
 
 article > img {
@@ -230,15 +284,18 @@ article > img {
 }
 
 article h3 {
-    font-size: 20px;
+    font-size: 1.45em;
+
 }
 
 article a {
 
-    display: flex;
+    display: inline-block;
     text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 0 0.5em 1.8em;
+    margin: 0 0 1em -0.2em;
 
-    padding: 0.5em 0 0.5em 1.5em;
 }
 
 main div {}
@@ -293,15 +350,15 @@ div.jobImage {
 
 }
 
-div.container2 {
+div.backgroundImage {
     background-image: url('../images/bg-image.jpg');
     width: 100%;
-    height: 3800px;
-    background-size: cover;
+    height: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-size: cover;
 }
+
+
 
 .justifyLink {
 
@@ -323,14 +380,14 @@ div.container2 {
 
 section.container {
     margin-top: 5em;
-    background: #f8f8f8;
+    background: #F5F5F5;
     width: 100%;
     max-width: 1920px;
     margin: auto 0;
 }
 
 
-section.container2 {
+section.backgroundImage {
 
 
     background: #EFEFEF;
@@ -338,10 +395,7 @@ section.container2 {
 }
 
 
-.container3 {
-    max-width: 1440px;
-    margin: auto 0;
-}
+
 
 section > li {
 
@@ -359,6 +413,10 @@ footer {
 
 }
 
+div > footer > section {
+    padding: 1.5em 10em 0 2em;
+}
+
 a > img {
 
     height: 2em;
@@ -368,8 +426,9 @@ a > img {
 footer > div {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
     grid-gap: 2em;
+
 }
 
 footer ul {
@@ -398,7 +457,7 @@ footer h3 {
     height: 3px;
     width: 100%;
     background-color: #4d4e53;
-    ;
+    z-index: 2;
     border-radius: 10px;
 
 }
@@ -407,29 +466,76 @@ footer h3 {
     background: #5ecdfc;
     color: #fff;
     border-radius: 5px;
+    padding: 1em 5em 1em 5em;
+
 
 }
 
 .headerImage {
 
-
     z-index: -2;
     display: flex;
 }
 
+
+/* grid */
 div.Grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, 2(30em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
     grid-gap: 2em;
+}
+
+/* specifications tab*/
+
+/*  alle images gedecladeert in de div die oneven zijn beginnen op de 1e rij van de grid*/
+.specifications > div:nth-child(odd) > img {
+    grid-row-start: 1;
+}
+
+div > section {
+
+    padding: 1.5em 4em 0 4em;
 
 }
+
+.specifications > div > img {
+
+    padding-top: 3em;
+    margin-bottom: 5em;
+    width: 70%;
+
+}
+
+
+
+/* in de div class backgroundimage zit een section en die section heeft meerdere div class grids
+en van de even of oneven div class grids willen we de image aanpassen*/
+
+
 
 .gradiant {
 
     background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+
+footer {
+    height: 100%;
+}
+
+
+
+/* media query om bepaalde elemtent responsive te maken op meerdere schermen*/
+@media (max-width: 555px) {
+
+    footer {
+        height: 100%;
+    }
+
 }
 
 @media (max-width: 886px) {
@@ -437,7 +543,7 @@ div.Grid {
         display: flex;
     }
 
-    header li {
+    header ul {
         display: none;
         background: white;
 
@@ -449,26 +555,77 @@ div.Grid {
         flex-direction: column;
         align-items: flex-start;
     }
+
     header ul {
         flex-direction: column;
         width: 100%;
         padding-left: 1em;
+        background: white;
+        height: 100%;
+
     }
-}
-
-li.active {
-    display: flex;
-}
-
-footer {
-    height: 450px;
-}
-
-
-@media (max-width: 1920px) {
 
     footer {
-        height: 850px;
+        height: 100%;
     }
+
+
+    ul.active {
+        display: flex;
+        background-color: #fff;
+        margin-top: 23em;
+        height: 55em;
+        font-size: 1.6em;
+        padding: 2em;
+        transition: 2s;
+        z-index: 999;
+
+    }
+
+    main section {
+        padding: 2em;
+    }
+
+    section > p {
+
+        padding-bottom: 1em;
+        width: 100%;
+    }
+
+    .logo {
+        position: relative;
+        background-image: url('../images/logo.svg');
+        padding: 1.5em;
+        width: 9em;
+        margin: 1.5em;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .specifications > div:nth-child(even) > img {
+        grid-row-start: 1;
+    }
+
+    .specifications > div > img {
+
+        margin-bottom: 0em;
+        width: 100%;
+
+    }
+
 }
 
+@media (max-width: 1440px) {
+
+    .specifications > div > img {
+
+        padding-top: 3em;
+        margin-bottom: 5em;
+        width: 90%;
+
+    }
+
+
+
+}

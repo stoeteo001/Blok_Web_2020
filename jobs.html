@@ -4,33 +4,40 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Blender.org</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+     <link rel="shortcut icon" href="https://www.blender.org/wp-content/themes/bthree/assets/images/favicon.ico?x20324">
     <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <label class="logo"><img src="images/logo.svg" alt="blender"></label>
+          <nav> <! -- Navigatie met daarin de logo, hamburger menu etc -->
 
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
+
+            <div class="logo">
+            
+            </div>
+            
+             <a href="#" class="toggle-button"> <! -- maak een link knop die een navigatie aanroept-->
+                <span class="bar"></span> <! -- span die een class aanroept door het hamburger menu in te laden-->
                 <span class="bar"></span>
                 <span class="bar"></span>
              
             </a>
-            <ul>
-                <li><a href="#placeholder1">Features</a> </li>
-                <li><a href="#placeholder2">Download</a> </li>
-                <li><a href="#placeholder3">Support</a> </li>
-                <li><a href="#placeholder4">Get Involved</a> </li>
-                <li><a href="#placeholder5">About</a> </li>
-                <li><a href="#placeholder6">Jobs</a> </li>
-                <li><a href="#placeholder7">Store</a> </li>
-                <li><a class="navButton" href="#placeholder8">Donate</a> </li>
+            <ul class="nav-links">  <! -- Class door later de javascript aan te kunnen roepen -->
+                    <li><a href="index.html">Home</a> </li> <! -- navigatie van de website in een Ul -->
+                    <li><a href="#placeholder2">Download</a> </li>
+                    <li><a href="#placeholder3">Support</a> </li>
+                    <li><a href="#placeholder4">Involved</a> </li>
+                    <li><a href="#placeholder5">About</a> </li>
+                    <li><a href="jobs.html">Jobs</a> </li>
+                    <li><a href="#placeholder7">Store</a> </li>
+                    <li><button><a href="#placeholder8">Donate</a></button></li>
             </ul>
+
+
 
         </nav>
 
@@ -81,7 +88,7 @@
             </div>
         </section>
 
-        <section class="container2">
+        <section class="">
 
 
 
@@ -132,67 +139,76 @@
 
     </main>
 
-    <footer>
-        <div>
+     <footer>
+        <! -- footer gevuld met navigatie elementen en social media elementen -->
+            <div>
 
-            <section>
-                <h3>Blender</h3>
-                <ul>
-                    <li><a>Download</a></li>
-                    <li><a>Features</a></li>
-                    <li><a>Source</a></li>
-                    <li><a>License</a></li>
-                    <li><a>Logo & Trademark</a></li>
+                <section>
+                    <h3>Blender</h3>
+                    <ul>
+                        <li><a>Download</a></li>
+                        <li><a>Features</a></li>
+                        <li><a>Source</a></li>
+                        <li><a>License</a></li>
+                        <li><a>Logo & Trademark</a></li>
 
-                </ul>
-            </section>
-            <section>
-                <h3>Involved</h3>
-                <ul>
-                    <li><a>Donate</a></li>
-                    <li><a>Development</a></li>
-                    <li><a>Documentation</a></li>
-                    <li><a>Education</a></li>
-                    <li><a>Certification</a></li>
-                </ul>
-            </section>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Involved</h3>
+                    <ul>
+                        <li><a>Donate</a></li>
+                        <li><a>Development</a></li>
+                        <li><a>Documentation</a></li>
+                        <li><a>Education</a></li>
+                        <li><a>Certification</a></li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h3>Blender.org</h3>
+                    <ul>
+                        <li><a>News</a></li>
+                        <li><a>Jobs</a></li>
+                        <li><a>Website</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Open Data</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Organization</h3>
+                    <ul>
+                        <li><a>Foundation</a></li>
+                        <li><a>Institute</a></li>
+                        <li><a>Studio</a></li>
+                        <li><a>Blender Netwerk</a></li>
+                        <li><a>Blender Conference</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a>Community</a></li>
+                        <li><a>Manual</a></li>
+                        <li><a>Tutorials</a></li>
+                        <li><a>Python API</a></li>
+                        <li><a>Developers forum</a></li>
+                    </ul>
+
+
+
+
+                </section>
+
+
+            </div>
             <section>
-                <h3>Blender.org</h3>
-                <ul>
-                    <li><a>News</a></li>
-                    <li><a>Jobs</a></li>
-                    <li><a>Website</a></li>
-                    <li><a>Contact</a></li>
-                    <li><a>Open Data</a></li>
-                </ul>
+                <a><img src="images/youtube.png" alt="blender"> Youtube</a>
+                <a><img src="images/twitter.png" alt="blender"> Twitter</a>
+                <a><img src="images/instagram.png" alt="blender"> Instagram</a>
+                <a><img src="images/facebook.png" alt="blender"> Facebook</a>
+                <a><img src="images/linkedin.png" alt="blender"> Linkedin</a>
             </section>
-            <section>
-                <h3>Organization</h3>
-                <ul>
-                    <li><a>Foundation</a></li>
-                    <li><a>Institute</a></li>
-                    <li><a>Studio</a></li>
-                    <li><a>Blender Netwerk</a></li>
-                    <li><a>Blender Conference</a></li>
-                </ul>
-            </section>
-            <section>
-                <h3>Support</h3>
-                <ul>
-                    <li><a>Community</a></li>
-                    <li><a>Manual</a></li>
-                    <li><a>Tutorials</a></li>
-                    <li><a>Python API</a></li>
-                    <li><a>Developers forum</a></li>
-                </ul>
-                <a><img src="images/youtube.png" alt="blender"></a>
-                <a><img src="images/twitter.png" alt="blender"></a>
-                <a><img src="images/instagram.png" alt="blender"></a>
-                <a><img src="images/facebook.png" alt="blender"></a>
-                <a><img src="images/linkedin.png" alt="blender"></a>
-            </section>
-        </div>
     </footer>
 
 </body>
